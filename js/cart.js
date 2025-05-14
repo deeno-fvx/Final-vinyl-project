@@ -10,7 +10,7 @@ const elements = {
     totalItems: document.getElementById('total-items'),
     totalPrice: document.getElementById('total-price'),
     orderNumber: document.getElementById('order-number'),
-    cartCount: document.getElementById('cart-count')
+    cartCount: document.getElementById('cart-count'),
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Show cart contents
 function showCart() {
-
     // if !cart.length) = display emptyMsg
     // else = display cartContainer + cartSummary
     if (cart.length === 0) {
@@ -75,13 +74,12 @@ function saveCart() {
 // quantity changes
 function changeQuantity(e) {
     const id = parseInt(e.target.dataset.id);
-    const item = cart.find(item => item.id === id);
+    const item = cart.find(cartItem => cartItem.id === id);
     if (!item) return;
 
     if (e.target.classList.contains('minus')) {
         if (item.quantity > 1) item.quantity--;
         else return;
-
     } else if (e.target.classList.contains('plus')) {
         item.quantity++;
     }
@@ -100,7 +98,8 @@ function removeItem(e) {
 
 // Empty cart
 function emptyCart() {
-    if (confirm('Empty your cart?')) {
+    const shouldEmpty = window.confirm('Empty your cart?');
+    if (shouldEmpty) {
         cart = [];
         saveCart();
         showCart();
@@ -112,12 +111,13 @@ function checkout() {
     const orderId = `DI-${Date.now().toString().slice(-6)}`;
     const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-    // toISOString for date in standard format instead of toString which would return different (outputs of time-zone and format), in different locations and browsers
+    // toISOString for date in standard format instead of toString which would return different
+    // (outputs of time-zone and format), in different locations and browsers
     orders.push({
         id: orderId,
         date: new Date().toISOString(),
         items: [...cart],
-        total: orderTotal
+        total: orderTotal,
     });
 
     localStorage.setItem('vinyl-orders', JSON.stringify(orders));
@@ -140,6 +140,7 @@ function setupEventListeners() {
 
     document.getElementById('empty-cart').addEventListener('click', emptyCart);
     document.getElementById('checkout-btn').addEventListener('click', checkout);
-    document.getElementById('continue-shopping').addEventListener('click',
-        () => window.location.href = 'index.html');
+    document.getElementById('continue-shopping').addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
 }
