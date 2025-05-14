@@ -56,11 +56,11 @@ No password protection yet... was too lazy to type in a password everytime for t
 
 ## 💻 Behind the Scenes (The Nitty gritty!)
 
-Here's what powers the site:
+Here is what I call the core/ the ***power***!:
 
 ### Core Technologies
-- **HTML** – For structure ("You can't spell DIVIDEND without <div>! Because good DIV usage pays off in the end!")
-- **CSS** – Flexbox & Grid for layout (centering divs is still black magic)
+- **HTML** – For structure ("diving my way down div hell.")
+- **CSS** – Flexbox & Grid for layout (centering divs is still wizardry)
 - **JavaScript (Vanilla)** – Pure, unfiltered JS. No frameworks.
 - **JSON** – Stores all product data
 
@@ -69,7 +69,7 @@ Here's what powers the site:
 - **Dynamic DOM updates** – No page reloads needed to reflect changes
 
 ### Hosting
-- **Netlify** – Every project deserves a home on the internet  
+- **Netlify** – Feel like this one deserves a home as my first of many.
   [🔗 Live Site](https://final-vinyl.netlify.app)
 
 ## 🚀 Running It Locally
@@ -86,7 +86,7 @@ Want to try it out or break it for fun?
 Looking back at this project, I'm honestly surprised at how much I was able to build in just a few months of learning. There were moments of frustration (why won't this work?!) but also moments of pure joy (IT WORKED!).
 The learning I had to do to understand all the new stuff I was using was intense but in the end I know more! +100xp
 
-This project taught me that coding isn't just about memorizing syntax - it's about problem-solving, patience, and being okay with breaking things until they finally work.
+This project taught me that coding isn't just about memorizing - it's about problem-solving, patience, and being okay with breaking things until they finally work (petience is still not my virtue).
 
 ### Fun Facts:
 12 projects were made and 1 worked, in total around 40 files.
