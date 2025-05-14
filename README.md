@@ -54,12 +54,12 @@ Features:
 
 No password protection yet... was too lazy to type in a password everytime for testing purposes... definitely not because I was too lazy to add it.
 
-## 💻 Behind the Scenes (Tech Stack)
+## 💻 Behind the Scenes (The Nitty gritty!)
 
 Here's what powers the site:
 
 ### Core Technologies
-- **HTML** – For structure (because `<div>` is life)
+- **HTML** – For structure ("You can't spell DIVIDEND without <div>! Because good DIV usage pays off in the end!")
 - **CSS** – Flexbox & Grid for layout (centering divs is still black magic)
 - **JavaScript (Vanilla)** – Pure, unfiltered JS. No frameworks.
 - **JSON** – Stores all product data
@@ -70,7 +70,7 @@ Here's what powers the site:
 
 ### Hosting
 - **Netlify** – Every project deserves a home on the internet  
-  [🔗 Live Site](https://your-netlify-link.netlify.app)
+  [🔗 Live Site]([https://your-netlify-link.netlify.app](https://final-vinyl.netlify.app))
 
 ## 🚀 Running It Locally
 
