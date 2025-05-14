@@ -78,8 +78,8 @@ Want to try it out or break it for fun?
 
 1. **Download or clone the project**
    ```bash
-   git clone https://github.com/your-username/vinyl-store.git
-   cd vinyl-store
+   git clone [https://github.com/your-username/vinyl-store.git](https://github.com/deeno-fvx/Final-vinyl-project.git)
+   cd Final-vinyl-project
    ```
 
 ## 🤔 Final Thoughts  
