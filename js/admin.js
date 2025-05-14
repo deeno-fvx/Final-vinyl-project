@@ -7,7 +7,7 @@ const elements = {
     ordersContainer: document.getElementById('orders-container'),
     addProductForm: document.getElementById('add-product-form'),
     editProductForm: document.getElementById('edit-product-form'),
-    resetBtn: document.getElementById('reset-products')
+    resetBtn: document.getElementById('reset-products'),
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         showProducts(); // Use existing products from localStorage
     }
-    
+
     loadOrders();
     setupTabs();
     setupEventListeners();
@@ -28,8 +28,10 @@ function setupTabs() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
-            
+            document.querySelectorAll('.tab-content').forEach(c => {
+                c.style.display = 'none';
+            });
+
             btn.classList.add('active');
             document.getElementById(`${btn.dataset.tab}-tab`).style.display = 'block';
         });
@@ -90,8 +92,8 @@ function showProducts() {
 
 // Display orders
 function showOrders() {
-    elements.ordersContainer.innerHTML = orders.length ? 
-        orders.map(order => `
+    elements.ordersContainer.innerHTML = orders.length
+        ? orders.sort((a, b) => new Date(b.date) - new Date(a.date)).map(order => `
             <div class="order-card">
                 <h4>Order: #${order.id}</h4>
                 <p>Date: ${new Date(order.date).toLocaleString()}</p>
@@ -105,7 +107,8 @@ function showOrders() {
                 </div>
                 <p class="total">Total: €${order.total.toFixed(2)}</p>
             </div>
-        `).join('') : '<p>No orders found</p>';
+        `).join('')
+        : '<p>No orders found</p>';
 }
 
 // Add new products form
@@ -118,9 +121,9 @@ elements.addProductForm.addEventListener('submit', e => {
         description: e.target.description.value,
         price: parseFloat(e.target.price.value),
         'in-stock': e.target['in-stock'].checked,
-        image: e.target.image.value || 'images/placeholder.jpg'
+        image: e.target.image.value || 'images/placeholder.jpg',
     };
-    
+
     products.push(newProduct);
     localStorage.setItem('vinyl-products', JSON.stringify(products));
     showProducts();
@@ -133,7 +136,7 @@ elements.editProductForm.addEventListener('submit', e => {
     e.preventDefault();
     const id = parseInt(e.target['edit-id'].value);
     const index = products.findIndex(p => p.id === id);
-    
+
     if (index !== -1) {
         products[index] = {
             ...products[index],
@@ -142,9 +145,9 @@ elements.editProductForm.addEventListener('submit', e => {
             description: e.target['edit-description'].value,
             price: parseFloat(e.target['edit-price'].value),
             'in-stock': e.target['edit-in-stock'].checked,
-            image: e.target['edit-image'].value
+            image: e.target['edit-image'].value,
         };
-        
+
         localStorage.setItem('vinyl-products', JSON.stringify(products));
         showProducts();
         closeModal();
@@ -154,7 +157,8 @@ elements.editProductForm.addEventListener('submit', e => {
 
 // Reset products to JSON
 elements.resetBtn.addEventListener('click', () => {
-    if (confirm('Reset all products to default?')) {
+    const shouldReset = window.confirm('Reset all products to default?');
+    if (shouldReset) {
         localStorage.removeItem('vinyl-products');
         loadProductsFromFile();
     }
@@ -165,15 +169,16 @@ document.addEventListener('click', e => {
         const product = products.find(p => p.id === parseInt(e.target.dataset.id));
         if (product) openEditModal(product);
     }
-    
+
     if (e.target.classList.contains('delete-btn')) {
-        if (confirm('Delete this product?')) {
+        const shouldDelete = window.confirm('Delete this product?');
+        if (shouldDelete) {
             products = products.filter(p => p.id !== parseInt(e.target.dataset.id));
             localStorage.setItem('vinyl-products', JSON.stringify(products));
             showProducts();
         }
     }
-    
+
     if (e.target.classList.contains('close-modal')) {
         closeModal();
     }
@@ -189,7 +194,7 @@ function openEditModal(product) {
     form['edit-price'].value = product.price;
     form['edit-in-stock'].checked = product['in-stock'];
     form['edit-image'].value = product.image || 'images/placeholder.jpg';
-    
+
     document.getElementById('edit-modal').style.display = 'block';
 }
 
