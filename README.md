@@ -60,8 +60,31 @@ The site uses:
 - Vanilla JavaScript for all the functionality (no frameworks yet!)  
 - CSS Flexbox and Grid for layout (centering divs is still hard)  
 
-### **Where It Lives**  
-Currently hosted on [github] - every project deserves a home on the internet even if it has a leak or two.
+Behind the Scenes (Tech Stack)
+The site runs on:
+
+HTML (for structure, because <div> is life).
+
+CSS (Flexbox & Grid for layout—centering divs is still black magic).
+
+JavaScript (Vanilla JS only—no frameworks, just pure chaos).
+
+JSON (For storing product data—because hardcoding 50 albums would be torture).
+
+localStorage (For cart persistence—so you don’t lose your imaginary purchases on refresh).
+
+Where It Lives
+Currently hosted on Netlify (every project deserves a home on the internet, even if it has a leak or two).
+
+Want to run it locally? (Because sometimes you just wanna tinker.)
+
+Download the project (or clone it if you're fancy).
+
+Open index.html in a browser (preferably Chrome or Firefox—IE is dead, let it rest).
+
+Play around! (Add records, break the cart, cry a little—it's all part of the process.)
+
+(No server needed! It's all client-side, baby.)
 
 
 ### **Final Thoughts**  
