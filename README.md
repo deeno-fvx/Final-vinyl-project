@@ -69,8 +69,7 @@ Here is what I call the core/ the ***power***!:
 - **Dynamic DOM updates** – No page reloads needed to reflect changes
 
 ### Hosting
-- **Netlify** – Feel like this one deserves a home as my first of many.
-- https://www.netlify.com
+- **[Netlify]** – Feel like this one deserves a home as my first of many.https://www.netlify.com
 - 
   [🔗 Live Site](https://final-vinyl.netlify.app)
 
