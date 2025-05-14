@@ -93,7 +93,7 @@ function showOrders() {
     elements.ordersContainer.innerHTML = orders.length ? 
         orders.map(order => `
             <div class="order-card">
-                <h4>Order #${order.id}</h4>
+                <h4>Order: #${order.id}</h4>
                 <p>Date: ${new Date(order.date).toLocaleString()}</p>
                 <div class="order-items">
                     ${order.items.map(item => `
