@@ -70,6 +70,7 @@ Here is what I call the core/ the ***power***!:
 
 ### Hosting
 - **Netlify** – Feel like this one deserves a home as my first of many.
+- 
   [🔗 Live Site](https://final-vinyl.netlify.app)
 
 ## 🚀 Running It Locally
