@@ -70,7 +70,7 @@ Here's what powers the site:
 
 ### Hosting
 - **Netlify** – Every project deserves a home on the internet  
-  [🔗 Live Site]((https://final-vinyl.netlify.app))
+  [🔗 Live Site](https://final-vinyl.netlify.app)
 
 ## 🚀 Running It Locally
 
