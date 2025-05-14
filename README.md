@@ -61,7 +61,8 @@ The site uses:
 - CSS Flexbox and Grid for layout (centering divs is still hard)  
 
 ### **Where It Lives**  
-Currently hosted on [] - every project deserves a home on the internet even if it has a leak or two.
+Currently hosted on [netlify] - every project deserves a home on the internet even if it has a leak or two.
+
 
 ### **Final Thoughts**  
 Looking back at this project, I'm honestly surprised at how much I was able to build in just a few months of learning. There were moments of frustration (why won't this work?!) but also moments of pure joy (IT WORKED!).

@@ -141,5 +141,5 @@ function setupEventListeners() {
     document.getElementById('empty-cart').addEventListener('click', emptyCart);
     document.getElementById('checkout-btn').addEventListener('click', checkout);
     document.getElementById('continue-shopping').addEventListener('click',
-        () => window.location.href = 'index.html');
+        () => window.location.href = 'html/index.html');
 }

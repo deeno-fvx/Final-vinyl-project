@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart - Final vinyl</title>
+    <title>Final vinyl - The final vinyl record shop you need!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Cal+Sans">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo">
+            <a href="html/index.html" class="logo">
                 <i class="fas fa-record-vinyl"></i>
                 <span>Final vinyl</span>
             </a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/index.html">Home</a></li>
                     <li><a href="#">New Arrivals</a></li>
                     <li><a href="#">Genres</a></li>
                     <li><a href="#">Artists</a></li>
                 </ul>
             </nav>
             <div class="header-icons">
-                <a href="cart.html" class="icon-link cart-icon"><i class="fas fa-shopping-cart"></i><span
+                <a href="html/cart.html" class="icon-link cart-icon"><i class="fas fa-shopping-cart"></i><span
                         id="cart-count" class="cart-count">0</span></a>
-                <a href="admin.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="html/admin.html" class="icon-link"><i class="fas fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -36,41 +36,31 @@
     <main>
         <section class="products-section">
             <div class="container">
-                <h2>Your Shopping Cart</h2>
-
-                <div id="cart-container">
-                    <p id="loading">Loading your cart...</p>
-                </div>
-
-                <div id="cart-summary" style="display: none;">
-                    <div class="summary-details">
-                        <div class="summary-row">
-                            <span>Total items:</span>
-                            <span id="total-items">0</span>
-                        </div>
-                        <div class="summary-row">
-                            <span>Total price:</span>
-                            <span id="total-price">€0.00</span>
-                        </div>
+                <div class="section-header">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search for vinyl...">
+                        <button id="search-btn">Search</button>
                     </div>
-
-                    <div class="cart-actions">
-                        <button id="empty-cart" class="secondary-btn">Empty Cart</button>
-                        <button id="checkout-btn" class="add-to-cart">Checkout</button>
+                    <div class="filter-options">
+                        <select id="artist-filter">
+                            <option value="">All Artists</option>
+                        </select>
+                        <select id="availability-filter">
+                            <option value="">All Items</option>
+                            <option value="in-stock">In Stock Only</option>
+                            <option value="out-of-stock">Out of Stock</option>
+                        </select>
+                        <button id="reset-filters">Reset Filters</button>
                     </div>
                 </div>
 
-                <div id="empty-cart-message" style="display: none;">
-                    <p>Your cart is empty.</p>
-                    <a href="index.html">Continue shopping</a>
+                <div class="products-header">
+                    <h2>Vinyl Records :</h2>
                 </div>
 
-                <div id="order-confirmation" style="display: none;">
-                    <h3>Order Confirmation</h3>
-                    <p>Thank you for your order!</p>
-                    <p>Your order number: <span id="order-number"></span></p>
-                    <p>Your order will be processed shortly.</p>
-                    <button id="continue-shopping" class="add-to-cart">Continue Shopping</button>
+                <div id="products-container" class="products">
+                    <!-- products loaded from js local storage -->
+                    <p id="loading">Loading vinyls...</p>
                 </div>
             </div>
         </section>
@@ -113,7 +103,7 @@
         </div>
     </footer>
 
-    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
