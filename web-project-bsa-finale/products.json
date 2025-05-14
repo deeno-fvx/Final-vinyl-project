@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "album": "AM",
+        "artist": "Arctic Monkeys",
+        "image": "images/am.jpg",
+        "discription": "The 2013 masterpiece blending rock, hip-hop, and R&B influences, featuring hits like 'Do I Wanna Know?' and 'R U Mine?'.",
+        "price": 29.99,
+        "in-stock": true
+    },
+    {
+        "id": 2,
+        "album": "Currents",
+        "artist": "Tame Impala",
+        "image": "images/currents.jpg",
+        "discription": "Psychedelic pop perfection—Kevin Parker's 2015 breakthrough album with hits like 'The Less I Know the Better.'",
+        "price": 32.99,
+        "in-stock": true
+    },
+    {
+        "id": 3,
+        "album": "The Queen Is Dead",
+        "artist": "The Smiths",
+        "image": "images/the queen is dead.jpg",
+        "discription": "A jangle-pop classic from 1986, featuring Morrissey's iconic lyrics and Johnny Marr's jangly guitar work.",
+        "price": 34.99,
+        "in-stock": false
+    },
+    {
+        "id": 4,
+        "album": "Tranquility Base Hotel & Casino",
+        "artist": "Arctic Monkeys",
+        "image": "images/tranquility base hotel & casino.jpg",
+        "discription": "A loungey, space-themed concept album with a retro-futuristic vibe, marking a sharp turn from their earlier sound.",
+        "price": 31.99,
+        "in-stock": false
+    },
+    {
+        "id": 5,
+        "album": "Apocalypse",
+        "artist": "Cigarettes After Sex",
+        "image": "images/apocalypse.jpg",
+        "discription": "Ethereal, cinematic love songs wrapped in minimalist instrumentation and Greg Gonzalez's whispery vocals.",
+        "price": 26.99,
+        "in-stock": true
+    },
+    {
+        "id": 6,
+        "album": "Lonerism",
+        "artist": "Tame Impala",
+        "image": "images/lonerism.jpg",
+        "discription": "A psychedelic rock journey through isolation and introspection, featuring hits like 'Feels Like We Only Go Backwards.'",
+        "price": 28.99,
+        "in-stock": true
+    },
+    {
+        "id": 7,
+        "album": "Meat Is Murder",
+        "artist": "The Smiths",
+        "image": "images/meat is murder.jpg",
+        "discription": "The 1985 sophomore album blending post-punk and indie pop, with Morrissey's provocative lyricism.",
+        "price": 30.00,
+        "in-stock": true
+    },
+    {
+        "id": 8,
+        "album": "Suck It and See",
+        "artist": "Arctic Monkeys",
+        "image": "images/suck it and see.jpg",
+        "discription": "A sun-soaked, melodic rock record with poetic lyrics and a more polished sound compared to their earlier work.",
+        "price": 27.99,
+        "in-stock": true
+    },
+    {
+        "id": 9,
+        "album": "No Place Like Home",
+        "artist": "Vacations",
+        "image": "images/no place like home.jpg",
+        "discription": "A dreamy indie rock album with shimmering guitars and introspective lyrics, showcasing the band's signature relaxed yet emotional sound.",
+        "price": 25.99,
+        "in-stock": false
+    },
+    {
+        "id": 10,
+        "album": "Blonde",
+        "artist": "Frank Ocean",
+        "image": "images/blonde.jpg",
+        "discription": "A groundbreaking R&B masterpiece with minimalist production, featuring emotional vocals and innovative arrangements that redefined the genre.",
+        "price": 36.99,
+        "in-stock": true
+    },
+    {
+        "id": 11,
+        "album": "Depression Cherry",
+        "artist": "Beach House",
+        "image": "images/depression cherry.jpg",
+        "discription": "A lush dream pop album with velvety textures, haunting melodies, and ethereal vocals that create an immersive sonic landscape.",
+        "price": 29.99,
+        "in-stock": true
+    }
+]

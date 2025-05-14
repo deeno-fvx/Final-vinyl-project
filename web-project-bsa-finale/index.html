@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final vinyl - The final vinyl record shop you need!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Cal+Sans">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-record-vinyl"></i>
+                <span>Final vinyl</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Artists</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="cart.html" class="icon-link cart-icon"><i class="fas fa-shopping-cart"></i><span
+                        id="cart-count" class="cart-count">0</span></a>
+                <a href="admin.html" class="icon-link"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search for vinyl...">
+                        <button id="search-btn">Search</button>
+                    </div>
+                    <div class="filter-options">
+                        <select id="artist-filter">
+                            <option value="">All Artists</option>
+                        </select>
+                        <select id="availability-filter">
+                            <option value="">All Items</option>
+                            <option value="in-stock">In Stock Only</option>
+                            <option value="out-of-stock">Out of Stock</option>
+                        </select>
+                        <button id="reset-filters">Reset Filters</button>
+                    </div>
+                </div>
+
+                <div class="products-header">
+                    <h2>Vinyl Records :</h2>
+                </div>
+
+                <div id="products-container" class="products">
+                    <!-- products loaded from js local storage -->
+                    <p id="loading">Loading vinyls...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Final vinyl</h3>
+                    <p>The final vinyl record shop you need!</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://open.spotify.com"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Sign up for exclusive deals and new releases!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="input-email" required>
+                        <button type="submit" class="search-btn">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Final vinyl - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
